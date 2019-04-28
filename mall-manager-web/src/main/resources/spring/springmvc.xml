@@ -23,6 +23,10 @@
 		<property name="suffix" value=".jsp" />
 	</bean>
 
+	<!--配置资源映射-->
+	<mvc:resources mapping="/css/**" location="/css/"/>
+	<mvc:resources mapping="/js/**" location="/js/"/>
+
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="mall-manager-web"/>
 	<dubbo:registry protocol="zookeeper"
