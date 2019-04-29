@@ -30,7 +30,7 @@
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="mall-manager-web"/>
 	<dubbo:registry protocol="zookeeper"
-					address="192.168.0.101:2181"/>
+					address="192.168.0.122:2181"/>
 	<dubbo:reference interface="cn.mrxu.service.ItemService" id="itemService" />
 
 </beans>

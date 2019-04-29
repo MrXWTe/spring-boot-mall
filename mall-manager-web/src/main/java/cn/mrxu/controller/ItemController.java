@@ -1,5 +1,6 @@
 package cn.mrxu.controller;
 
+import cn.mrxu.common.pojo.EasyUIDataGridResult;
 import cn.mrxu.pojo.TbItem;
 import cn.mrxu.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +22,12 @@ public class ItemController {
     @ResponseBody
     public TbItem getItemById(@PathVariable("itemId") Long itemId){
         return itemService.getItemById(itemId);
+    }
+
+    @RequestMapping("/item/list")
+    @ResponseBody
+    public EasyUIDataGridResult getItemList(Integer page, Integer rows){
+        EasyUIDataGridResult itemList = itemService.getItemList(page, rows);
+        return itemList;
     }
 }
