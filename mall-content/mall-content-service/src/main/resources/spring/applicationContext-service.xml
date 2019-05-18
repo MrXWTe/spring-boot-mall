@@ -32,7 +32,7 @@
 
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="cn.mrxu.content.service.ContentCategoryService" ref="contentCategoryServiceImpl" timeout="600000"/>
-    <!--<dubbo:service interface="cn.mrxu.service.ItemCatService" ref="itemCatServiceImpl" timeout="600000"/>-->
+    <dubbo:service interface="cn.mrxu.content.service.ContentService" ref="contentServiceImpl" timeout="600000"/>
 
 
 </beans>
