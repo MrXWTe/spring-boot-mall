@@ -6,9 +6,13 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
 public class JedisClientPool implements JedisClient {
-	
+
 	@Autowired
 	private JedisPool jedisPool;
+
+	public void setJedisPool(JedisPool jedisPool) {
+		this.jedisPool = jedisPool;
+	}
 
 	@Override
 	public String set(String key, String value) {
