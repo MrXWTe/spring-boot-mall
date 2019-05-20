@@ -1,4 +1,5 @@
 cn\mrxu\controller\PageController.class
 cn\mrxu\controller\ContentCatController.class
 cn\mrxu\controller\ItemCatController.class
+cn\mrxu\controller\ContentController.class
 cn\mrxu\controller\ItemController.class

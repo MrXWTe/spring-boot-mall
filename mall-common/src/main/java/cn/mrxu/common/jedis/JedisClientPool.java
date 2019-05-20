@@ -5,13 +5,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
-public class JedisClientPool implements JedisClient {
+import java.io.Serializable;
+
+public class JedisClientPool implements JedisClient, Serializable {
 
 	@Autowired
 	private JedisPool jedisPool;
 
 	public void setJedisPool(JedisPool jedisPool) {
 		this.jedisPool = jedisPool;
+	}
+
+	public JedisPool getJedisPool() {
+		return jedisPool;
+	}
+
+	public JedisClientPool() {
 	}
 
 	@Override

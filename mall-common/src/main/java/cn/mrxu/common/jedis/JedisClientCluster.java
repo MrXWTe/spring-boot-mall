@@ -4,13 +4,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import redis.clients.jedis.JedisCluster;
 
-public class JedisClientCluster implements JedisClient {
+import java.io.Serializable;
+
+public class JedisClientCluster implements JedisClient, Serializable {
 	
 	@Autowired
 	private JedisCluster jedisCluster;
 
 	public void setJedisCluster(JedisCluster jedisCluster) {
 		this.jedisCluster = jedisCluster;
+	}
+
+	public JedisCluster getJedisCluster() {
+		return jedisCluster;
+	}
+
+	public JedisClientCluster() {
 	}
 
 	@Override
