@@ -1,6 +1,6 @@
 cn\mrxu\common\jedis\JedisClientCluster.class
+cn\mrxu\common\utils\E3Result.class
 cn\mrxu\common\pojo\EasyUITreeNode.class
 cn\mrxu\common\jedis\JedisClient.class
 cn\mrxu\common\pojo\EasyUIDataGridResult.class
 cn\mrxu\common\jedis\JedisClientPool.class
-cn\mrxu\common\utils\E3Result.class
