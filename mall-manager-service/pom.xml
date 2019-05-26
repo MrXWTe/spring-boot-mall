@@ -81,6 +81,7 @@
             <artifactId>zkclient</artifactId>
         </dependency>
 
+        <!--activemq依赖-->
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-all</artifactId>
